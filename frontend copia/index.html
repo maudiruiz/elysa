@@ -19,7 +19,7 @@
   width: 1024px;
 }
 .back-doctores{
-  background-image: url('assets/010.png');
+  background-image: url('img/010.png');
   background-repeat: no-repeat;
   height: 550px;
   background-position: right bottom;
@@ -28,7 +28,7 @@
   padding-top: 170px;
 }
 .patientback{
-    background-image: url('assets/009.png');
+    background-image: url('img/009.png');
   background-repeat: no-repeat;
 
   background-position: right bottom;
@@ -162,7 +162,7 @@ h1{
   padding-right: 150px !important; 
 }
 .logo{
-  background-image: url('assets/012.png');
+  background-image: url('img/012.png');
   width: 100px;
   height: 100px;
 }
@@ -173,8 +173,8 @@ h1{
 <head>
 <meta charset="UTF-8">
 </head>
-<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
- -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
 <div class="container-full">
 
 
@@ -209,7 +209,7 @@ h1{
         <div class="container"> 
             <div class="row nav2">
               <div class="col-lg-4 ">
-                <img src="assets/012.png">
+                <img src="img/012.png">
               </div>
             </div>
           </div>
@@ -256,8 +256,7 @@ h1{
                   Blog
                 </div>
               </a>
-
-              <a href=" <%=  new_user_registration_path %>">
+              <a href="#regist">
                 <div class="col-lg-2 col-md-offset-6  men1 nav1">
                   Registrate
                 </div>
@@ -308,7 +307,7 @@ h1{
 
             <h4>Prevención</h4>
             <h5 class="sub-dos">Conservamos tu salud</h5>
-             <img src="assets/001.png">
+             <img src="img/001.png">
 
             <p>El 70% de las enfermedades pueden prevenirse con hábitos apropiados y chequeos regulares.</p>
 
@@ -319,7 +318,7 @@ h1{
             <h4>Atención</h4>
             <h5 class="sub-dos">Cuidamos tu salud</h5>
 
-            <img src="assets/002.png">
+            <img src="img/002.png">
 
             <p>Acceso a consultas médicas ilimitadas de atención primaria en la comodidad de tu casa, justo como si fueras al consultorio.</p>
 
@@ -330,7 +329,7 @@ h1{
             <h4>Canalización</h4>
             <h5 class="sub-dos">No te dejamos solo</h5>
 
-            <img src="assets/003.png">
+            <img src="img/003.png">
 
             <p>En caso de tener que ser canalizado podrá ser con alguno de nuestros médicos y centros de salud verificados para garantizarte la mejor atención.</p>
 
@@ -348,7 +347,7 @@ h1{
           <h1 class="pink">Tu salud, <b>en la palma de tu mano<b></h1>
           <p class="lead">Un Profesional en tu puerta siempre que lo necesites. Sólo basta un toque en tu pantalla.</p>
           <div class="col-lg-4">
-            <img src="assets/iphone.png">
+            <img src="img/iphone.png">
           </div>
           <div class="col-lg-8 selling">
             <br>
@@ -400,7 +399,7 @@ h1{
       <div class="row">
         <div class="col-lg-3">
           <h4>Conserva tu salud</h4></br>
-          <img src="assets/004.png">
+          <img src="img/004.png">
 
           <p>Prevención antes de tratamiento.</p>
 
@@ -408,7 +407,7 @@ h1{
 
         <div class="col-lg-3">
           <h4>Tu tiempo, tan valioso como tu salud</h4></br>
-                    <img src="assets/005.png">
+                    <img src="img/005.png">
 
           <p>Atención en tus horarios, en tu casa u oficina.</p>
 
@@ -416,7 +415,7 @@ h1{
         </div>
          <div class="col-lg-3">
           <h4>NO pagas consulta</h4></br>
-                    <img src="assets/006.png">
+                    <img src="img/006.png">
 
           <p>Solicita un profesional todas las veces que lo necesites sin pagar más.</p>
 
@@ -424,7 +423,7 @@ h1{
         </div>
           <div class="col-lg-3">
           <h4>Sin preguntas ni requisitos.</h4></br>
-                    <img src="assets/007.png">
+                    <img src="img/007.png">
 
           <p>La suscripción a Elysa es para cualquiera, sin importar tu condición..</p>
 
@@ -471,19 +470,14 @@ A tu puerta más que un médico, llegará un amigo que se ocupará por manterte 
           <p class="lead">Pre-Regístrate hoy y sé de los primeros con acceso a una suscripción.</p>
         </div>
           <div class="col-lg-3">
-          <!--   <div class="input-group">
+            <div class="input-group">
               <span class="input-group-addon">@</span>
               <input type="text" class="form-control" placeholder="ingresa tu e-mail">
-            </div> -->
+            </div>
             <hr>
-            <a href=" <%=  new_user_registration_path %>">
-                <button type="button" style="width:100%" class="btn btn-primary btn-lg">Súscribete</button>
-            </a>
+             <button type="button" style="width:100%" class="btn btn-primary btn-lg">Súscribete</button>
             <hr>
-            <a href=" <%=  user_omniauth_authorize_path(:facebook) %>">
-
             <button type="button" style="width:100%" class="btn btn-primary btn-lg">Ingresar con FB.</button>
-            </a>
 
 
 
